@@ -35,9 +35,11 @@ export const NavBar = () => {
   }
   return (
     <>
-      <div className="  max-w-screen-lg mx-auto pt-3 gap-4 select-none">
-        <nav >
-          <div className=" navigation flex justify-between px-4 py-4 " >
+      <div className=" shadow pt-3 gap-4 select-none">
+        <nav
+          className="max-w-screen-lg mx-auto"
+        >
+          <div className="relative navigation top-0 left-0 navigation flex justify-between px-4 py-4 " >
 
             {/* Logo  */}
             <a
@@ -66,7 +68,7 @@ export const NavBar = () => {
                   className=" hover:text-primary"
                 >Login</a>
                 <button
-                  className="  bg-primary py-1 px-3 rounded text-white hover:bg-opacity-70 "
+                  className="  btn-primary"
                 >
                   Register
                 </button>
@@ -79,10 +81,10 @@ export const NavBar = () => {
             }
           </div>
           <div
-            className={` w-9/12 h-[100vh] bg-primary ease-in-out duration-1000  sm:hidden ${isMenuOpen ? "" : " -translate-x-full"}`}
+            className={` absolute top-0 w-full h-screen z-10 bg-primary ease-in-out duration-1000  sm:hidden ${isMenuOpen ? "" : " -translate-x-full "}`}
           >
             <ul
-              className=" items-center space-y-4 pl-8 pt-6 ">
+              className=" items-center space-y-4 pl-8 pt-20 ">
               {
                 navigationItems.map(({ id, title }) => <li key={id}>
                   <Link
@@ -99,7 +101,7 @@ export const NavBar = () => {
                   className=" hover:text-white"
                 >Login</a><br />
                 <button
-                  className=" bg-white py-1 px-3 rounded text-primary hover:bg-opacity-70"
+                  className="btn-secondary"
                 >
                   Register
                 </button>

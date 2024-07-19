@@ -11,6 +11,9 @@ export default {
         brandyello: "#ffc728",
         colorText: "#191a15",
       },
+      backgroundImage: {
+        "header-bg": "URL('./assets/img/bg.png')",
+      },
     },
   },
   plugins: [],

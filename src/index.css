@@ -15,3 +15,10 @@ body{
 .navigation {
 z-index: 100;
 }
+.btn-secondary{
+  @apply bg-white py-2 px-5 rounded shadow-lg text-primary hover:bg-opacity-80;
+}
+.btn-primary{
+  @apply bg-primary py-2 px-5 rounded shadow text-white hover:bg-opacity-80;
+}
+
