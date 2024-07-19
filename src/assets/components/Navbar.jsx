@@ -7,23 +7,28 @@ import { CgClose } from "react-icons/cg";
 const navigationItems = [
   {
     id: 1,
-    title: "Home"
+    title: "Home",
+    link: "home"
   },
   {
     id: 2,
-    title: "About"
+    title: "About",
+    link: "about"
   },
   {
     id: 3,
-    title: "Product"
+    title: "Product",
+    link: "product"
   },
   {
     id: 4,
-    title: "Pricing"
+    title: "Pricing",
+    link: "pricing"
   },
   {
     id: 5,
-    title: "Contact"
+    title: "Contact",
+    link: "contact"
   },
 
 ]
@@ -33,9 +38,12 @@ export const NavBar = () => {
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
+  function hiddeNavDrawer() {
+    setIsMenuOpen(!isMenuOpen);
+  }
   return (
     <>
-      <div className=" shadow pt-3 gap-4 select-none">
+      <div className=" shadow pt-3 gap-4 select-none bg-primary bg-opacity-5 ">
         <nav
           className="max-w-screen-lg mx-auto"
         >
@@ -54,9 +62,9 @@ export const NavBar = () => {
             <ul
               className="hidden justify-between items-center gap-6 md:flex ">
               {
-                navigationItems.map(({ id, title }) => <li key={id}>
+                navigationItems.map(({ id, link, title }) => <li key={id}>
                   <Link
-                    to={title}
+                    to={link}
                     className=' hover:text-primary hover:border-b-primary'
                   >{title} </Link>
                 </li>)
@@ -86,9 +94,10 @@ export const NavBar = () => {
             <ul
               className=" items-center space-y-4 pl-8 pt-20 ">
               {
-                navigationItems.map(({ id, title }) => <li key={id}>
+                navigationItems.map(({ id, link, title }) => <li key={id}>
                   <Link
-                    to={title}
+                    onClick={hiddeNavDrawer}
+                    to={link}
                     className=' hover:text-white border-b-2 border-b-primary hover:border-b-white'
                   >{title} </Link>
                 </li>)

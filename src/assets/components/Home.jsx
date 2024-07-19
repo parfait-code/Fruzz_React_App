@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div
       id="home"
-      className="min-h-screen w-full absolute top-0 bg-primary bg-opacity-10 pt-28 ">
+      className="w-full py-9 ">
       <div
         className=" max-w-screen-lg mx-auto">
         <div
