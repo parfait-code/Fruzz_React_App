@@ -1,0 +1,12 @@
+# run this command
+#npm i react-scroll
+#npm install react-icons --save
+#npm i flowbite-react
+#npm i framer-motion
+import { FaXmark, FaBars} from 'react-icons/fa6'
+
+//projet 2h du bureau
+#npm install react-icons 
+#npm i react-slick --save
+#npm i aos --save
+#npm i react-scroll
