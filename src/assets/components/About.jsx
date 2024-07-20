@@ -1,27 +1,14 @@
 import React from "react";
-import { BsStar, BsStarFill, BsStars } from "react-icons/bs";
+import { BsStarFill, BsStarHalf } from "react-icons/bs";
 
-
-const ratingProduct = [
-  {
-    id: 0,
-    rate: 4.9,
-    product: 'Databricks'
-  },
-  {
-    id: 1,
-    rate: 4.8,
-    product: 'Chainalysis'
-  },
-]
 
 export const About = () => {
   return (
     <div id="about"
-      className=" p-4 pb-16 ">
-      <div className=" space-y-2">
+      className=" space-y-6 p-4 pb-16 ">
+      <div className=" space-y-4">
         <h3
-          className=" text-xl font-bold">
+          className=" text-3xl font-bold">
           How we support our pratner all over the world
         </h3>
         <p
@@ -47,9 +34,9 @@ export const About = () => {
               <BsStarFill className="text-brandyello" />
               <BsStarFill className="text-brandyello" />
               <BsStarFill className="text-brandyello" />
-              <BsStarFill className="text-brandyello" />
+              <BsStarHalf className="text-brandyello" />
             </div>
-            <p className=" font-medium text-simpleText"><span className=" font-semibold text-colorText">4.9</span> / 5 rate</p>
+            <p className=" font-medium text-simpleText"><span className=" font-semibold text-colorText">4.5</span> / 5 rate</p>
             <p>Databricks</p>
           </div>
 
