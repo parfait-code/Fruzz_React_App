@@ -43,11 +43,11 @@ export const NavBar = () => {
   }
   return (
     <>
-      <div className=" shadow pt-3 gap-4 select-none bg-primary bg-opacity-5 ">
+      <div className='w-full  fixed shadow gap-4 select-none bg-primary bg-opacity-5'  >
         <nav
-          className="max-w-screen-lg mx-auto"
+          className="max-w-screen-lg  mx-auto"
         >
-          <div className="relative navigation top-0 left-0 navigation flex justify-between px-4 py-4 " >
+          <div className={`relative z-50   navigation top-0 left-0 navigation flex justify-between px-4 py-4 ${isMenuOpen && ' bg-white'}`} >
 
             {/* Logo  */}
             <a
@@ -89,7 +89,7 @@ export const NavBar = () => {
             }
           </div>
           <div
-            className={` absolute top-0 w-full h-screen z-10 bg-primary ease-in-out duration-1000  sm:hidden ${isMenuOpen ? "" : " -translate-x-full "}`}
+            className={` absolute top-0 w-full h-screen bg-primary ease-in-out duration-500  sm:hidden ${isMenuOpen ? "" : " -translate-x-full "}`}
           >
             <ul
               className=" items-center space-y-4 pl-8 pt-20 ">
