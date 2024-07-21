@@ -21,4 +21,10 @@ z-index: 100;
 .btn-primary{
   @apply bg-primary py-2 px-5 rounded shadow text-white hover:bg-opacity-80;
 }
+.cardPro{
+  min-height: 672px;
+}
+.card{
+  min-height: 598px;
+}
 

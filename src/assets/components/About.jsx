@@ -1,11 +1,13 @@
 import React from "react";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
-
+import analytics from "../img/analytic.png";
+import engagement from "../img/engagement.png";
+import publishing from "../img/publishing.png";
 
 export const About = () => {
   return (
     <div id="about"
-      className=" space-y-6 p-4 pb-16 ">
+      className="max-w-screen-lg mx-auto space-y-6 p-4 pb-16 md:flex md:gap-2 md:items-center ">
       <div className=" space-y-4">
         <h3
           className=" text-3xl font-bold">
@@ -45,7 +47,8 @@ export const About = () => {
       </div>
       <div className="">
         <div className="flex gap-3 mt-5">
-          <img className="min-w-11 h-11 shadow" />
+
+          <img src={publishing} className="min-w-11 h-11 shadow" />
           <div>
             <h4 className=" font-extrabold">
               Publishing
@@ -56,7 +59,7 @@ export const About = () => {
           </div>
         </div>
         <div className="flex gap-3 mt-5 ">
-          <img className="min-w-11 h-11 shadow" />
+          <img src={engagement} className="min-w-11 h-11 shadow" />
           <div>
             <h4 className=" font-extrabold">
               Engagement
@@ -67,7 +70,7 @@ export const About = () => {
           </div>
         </div>
         <div className="flex gap-3 mt-5">
-          <img className="min-w-11 h-11 shadow" />
+          <img src={analytics} className="min-w-11 h-11 shadow" />
           <div>
             <h4 className=" font-extrabold">
               Analytics

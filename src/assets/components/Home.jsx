@@ -1,6 +1,7 @@
 import React from "react";
 import brang from "../img/brand.png"
 import playIcon from "../img/play.png"
+import separation from "../img/headerSeparation.png"
 
 export const Home = () => {
 
@@ -22,6 +23,7 @@ export const Home = () => {
               className=" text-3xl md:text-5xl font-extrabold text-colorText text-start">
               We're here to <br /> <span className="text-primary">Increase </span>your <br /> Productivity
             </h2>
+            <img src={separation} />
             <p
               className=" text-gray-500 font-semibold text-start">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
